@@ -1,5 +1,5 @@
 {
-  "name": "wifr",
+  "name": "@pikl-cz/wifr",
   "version": "1.0.0",
   "description": "CSS/JS tool to build wireframes",
   "main": "index.js",
