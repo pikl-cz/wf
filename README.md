@@ -2,9 +2,29 @@
 
 CSS/JS tool for building wireframes.
 
+TODO: CDN
+https://www.jsdelivr.com/
+
+## Implementation
+
+```bash
+# Install via Yarn or NPM
+$ yarn add wifr
+
+# CSS
+node_modules/wifr/dist/wifr.min.css
+
+# SCSS
+@import '/node_modules/wifr/src/scss/index.scss';
+
+# Additional JS
+import '/node_modules/wifr/src/scss/index.scss';
+```
+
 ## Build Setup
 
 ```bash
+
 # install dependencies
 $ yarn install
 
@@ -14,10 +34,3 @@ $ yarn start
 # build for production
 $ yarn build
 ```
-
-## Implementation
-
-- Just CSS / SCSS
-- CSS and JS
-
-Detailed explanation on how things work, check out [](https://url...).

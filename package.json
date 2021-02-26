@@ -34,7 +34,9 @@
     "type": "git",
     "url": "git+https://github.com/pikl-cz/wifr.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@pikl-cz"
-  }
+  "files": [
+    "src/*",
+    "dist/*.js",
+    "dist/*.css"
+  ]
 }
