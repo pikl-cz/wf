@@ -1,0 +1,123 @@
+.wf2del-perex {
+  background-color: gray;
+  color: $color-white;
+  border: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wf2del-col-container {
+  display: table; /* Make the container element behave like a table */
+  width: 100%;
+  overflow: hidden;
+  // word-break: break-all;
+  width: 100%;
+  // table-layout: fixed;
+}
+.wf2del-block--cell {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  display: table-cell;
+
+  @media only screen and (max-width: $dev-xs) {
+    & {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+.wf2del-note {
+  box-sizing: border-box;
+  font-style: italic;
+  border: 1px solid red;
+  background-color: lightcoral;
+  padding: 5px;
+  color: #fff;
+  text-align: left;
+  float: right;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: -40px;
+  margin-right: -20px;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.wf2del-img {
+  box-sizing: border-box;
+  display: block;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  background-color: lightseagreen;
+  border: 3px dotted white;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.wf2del-item {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  border: 1px solid black;
+  float: left;
+  padding: 10px;
+}
+
+.wf2del-msg {
+  border: 1px solid red;
+  background-color: lightcoral;
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+  line-height: 30px;
+}
+
+.wf2del--text-centered {
+  text-align: center;
+}
+
+.wf2del-table {
+  margin: 0 auto;
+  width: 50%;
+  border: 1px dotted red;
+  background-color: #eee;
+
+  thead td {
+    font-weight: bold;
+  }
+
+  td {
+    padding: 3px;
+    width: 50%;
+    border: 1px solid green;
+    background-color: white;
+  }
+
+  @media only screen and (max-width: $dev-xs) {
+    & {
+      width: 100%;
+      display: block;
+      overflow: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $dev-lg) {
+  .wf2del-lg-3 {
+    width: 33%;
+    height: 100%;
+    float: left;
+    display: block;
+    overflow: auto;
+    float: left;
+  }
+}

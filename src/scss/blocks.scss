@@ -1,0 +1,56 @@
+.wf2del-page-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 70%;
+  background-color: gray;
+  display: block;
+  padding: 5px;
+
+  @media only screen and (max-width: $dev-xs) {
+    & {
+      width: 100%;
+    }
+  }
+
+  p:not(.wf2del-note) {
+    display: inline;
+    margin: 10px 10px;
+    padding: 5px;
+    background-color: #ddd;
+    box-shadow: 0.5em 0 0 #ddd, -0.5em 0 0 #ddd;
+    box-decoration-break: clone;
+    line-height: 2.5;
+  }
+  h1,
+  h2 {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: red;
+    border-bottom: 2px dotted red;
+    text-decoration: none;
+
+    &:hover {
+      border: none;
+    }
+  }
+}
+
+.wf2del-block {
+  background-color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  border: 1px dotted red;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
